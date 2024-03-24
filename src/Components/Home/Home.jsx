@@ -1,8 +1,13 @@
+import Banner from "../Banner/Banner";
+import CategoryList from "../CategoryList/CategoryList";
+import FeaturedData from "../FeaturedData/FeaturedData";
 
 const Home = () => {
     return (
         <div>
-            <h2>This is a home Components</h2>
+            <Banner></Banner>
+            <CategoryList></CategoryList>
+            <FeaturedData></FeaturedData>
         </div>
     );
 };
