@@ -23,7 +23,7 @@ const JobDeatils = () => {
     // console.log(job)
     // console.log(jobs, id)
     const handleApplyJob = () => {
-        saveApplication(id);
+        saveApplication(idInt);
         toast('You have applied successfully')
     }
     return (
