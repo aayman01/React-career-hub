@@ -1,7 +1,10 @@
 import { CiLocationOn, CiDollar } from "react-icons/ci";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const FeaturedJob = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -38,11 +41,16 @@ const FeaturedJob = ({ job }) => {
           </div>
         </div>
         <div className="card-actions justify-start">
-          <button className="btn btn-primary">View Details</button>
+          <Link to={`/job/${id}`}>
+            <button className="btn btn-primary">View Details</button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
+FeaturedJob.propTypes = {
+    job: PropTypes.object
+}
 export default FeaturedJob;
